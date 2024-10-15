@@ -9,7 +9,9 @@
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    flex-flow: row-reverse;
+    /*flex-flow: row-reverse;*/
+    flex-direction: row;
+    justify-content: space-evenly;
  }
  .child1,.child2,.child3,.child4
  {
@@ -23,6 +25,7 @@
  }
  .child1{
     background-color: burlywood;
+    flex-basis: 50%;
  }
  .child2{
     background-color: rgb(0, 255, 64);
