@@ -64,16 +64,17 @@
 //   disp.innerHTML = "<h2> Hello, You have called get data </h2>";
 // }
 // btn.addEventListener("click",getData);
-const promise=new promise((resolve,reject) => {
+const promise=new Promise((resolve,reject) => {
     let a = 12;
     if(a>10){
-        resolve("Resolved");
+        resolve({name:"Rahul", branch: "cse"});
     }
     else{
         reject("Rejected");
     }
 });
 promise.then((msg) => console.log(msg)).catch(error=>console.log(error));
+
 
 
 
